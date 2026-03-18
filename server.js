@@ -24,6 +24,12 @@ const PORT = process.env.PORT || 8080;
 // When someone visits /, Express sends public/index.html automatically.
 app.use(express.static(path.join(__dirname, 'public')));
 
+// app.get('/api/hello', (req,res)=> {
+//   {
+//     return res.status(200)
+//   }
+// })
+
 // Start listening for incoming HTTP requests.
 app.listen(PORT, () => {
   console.log(`Workshop app running → http://localhost:${PORT}`);
